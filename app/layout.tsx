@@ -29,15 +29,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <head>
-        <style>{`
-html {
-  font-family: ${inter.style.fontFamily};
-  --font-sans: ${inter.variable};
-  --font-heading: ${montserrat.variable};
-}
-        `}</style>
-      </head>
       <body className={`${inter.variable} ${montserrat.variable} antialiased`}>{children}</body>
     </html>
   )
