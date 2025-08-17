@@ -99,7 +99,7 @@ export default function App() {
             .filter(place => selectedCategory === 'all' || place.categories.includes(selectedCategory))
             .filter(place => selectedTown === 'all' || place.towns.includes(selectedTown))
             .map((place) => (
-              <PlaceCard key={place.id} place={place} />
+              <PlaceCard key={place.id} place={place} userCoords={coords} />
             ))}
         </div>
         <MapComponent places={places} userCoords={coords} />

@@ -1,11 +1,28 @@
 import type { Place } from './types'
-import { Utensils, Wine, Coffee, Heart, TreePine, Bike, MapPin, Link, BedDouble } from "lucide-react"
+import { Utensils, Wine, Coffee, Heart, TreePine, MapPin, Link, BedDouble, Footprints, ThumbsUp } from "lucide-react"
 
 interface PlaceCardProps {
   place: Place
+  userCoords?: { lat: number; lng: number } | null
 }
 
-export function PlaceCard({ place }: PlaceCardProps) {
+export function PlaceCard({ place, userCoords }: PlaceCardProps) {
+
+  // Calculate distance from user if coordinates are available
+  const calculateDistance = (lat1: number, lng1: number, lat2: number, lng2: number): number => {
+    const R = 3959 // Earth's radius in miles
+    const dLat = (lat2 - lat1) * Math.PI / 180
+    const dLng = (lng2 - lng1) * Math.PI / 180
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLng / 2) * Math.sin(dLng / 2)
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+    return R * c
+  }
+
+  const distance = userCoords && place.lat && place.lng 
+    ? calculateDistance(userCoords.lat, userCoords.lng, place.lat, place.lng)
+    : null
 
   function CategoryIcon({ category }: { category: string }) {
     switch (category) {
@@ -15,7 +32,8 @@ export function PlaceCard({ place }: PlaceCardProps) {
       case 'coffee': return <Coffee className="w-5 h-5" />
       case 'stay': return <BedDouble className="w-5 h-5" />
       case 'outdoor': return <TreePine className="w-5 h-5" />
-      case 'activity': return <Bike className="w-5 h-5" />
+      case 'activity': return <ThumbsUp className="w-5 h-5" />  
+      case 'hiking': return <Footprints className="w-5 h-5" />
       default: return <Heart className="w-5 h-5" />
     }
   }
@@ -29,6 +47,11 @@ export function PlaceCard({ place }: PlaceCardProps) {
       {place.towns && (
         <p className="text-sm text-slate-600 mt-1">
           {place.towns.join(', ')}
+          {distance && (
+            <span className="ml-2 text-slate-400 text-xs">
+              {distance.toFixed(1)} miles away
+            </span>
+          )}
         </p>
       )}
       {place.categories && (

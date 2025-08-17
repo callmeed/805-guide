@@ -15,7 +15,7 @@
     "id": "ember-restaurant-arroyo-grande",
     "name": "Ember Restaurant",
     "towns": ["Arroyo Grande", "South SLO County"],
-    "categories": ["food", "activity"],
+    "categories": ["food", "bar"],
     "primaryCategory": "food",
     "price": "$$$",
     "tags": ["wood-fired", "Italian", "rustic", "warm ambiance"],
@@ -40,5 +40,33 @@
     "mapUrl": "https://maps.app.goo.gl/BpaVf4oCFLqsSRUN9",
     "lat": 35.1182,
     "lng": -120.6018
+  },
+  {
+    "id": "pismo-preserve",
+    "name": "Pismo Preserve",
+    "towns": ["Pismo Beach", "South SLO County"],
+    "categories": ["hiking"],
+    "primaryCategory": "hiking",
+    "price": "$",
+    "tags": ["kid-friendly", "views", "fire-pits", "cocktails", "patio"],
+    "notes": "11+ miles of trails for hiking, biking, and horseback riding. Great ocean views.",
+    "url": "https://lcslo.org/pismo-preserve/",
+    "mapUrl": "https://maps.app.goo.gl/cgaS38jLBqQNGp8B8",
+    "lat": 35.15149285393791,
+    "lng": -120.65290539413347
+  },
+  {
+    "id": "sycamore-mineral-springs-resort",
+    "name": "Hot Tubs at Sycamore",
+    "towns": ["Avila Beach", "South SLO County"],
+    "categories": ["activity"],
+    "primaryCategory": "activity",
+    "price": "$$$",
+    "tags": ["romance", "outdoors"],
+    "notes": "Romantic, private mineral springs hot tubs nestled in the woods. Known as 'soak & poke' to the locals. Ask for Twilight if it's available.",
+    "url": "https://www.sycamoresprings.com/hot-tubs",
+    "mapUrl": "https://maps.app.goo.gl/yRj3uidrEr7EvHQi9",
+    "lat": 35.1861542035894,
+    "lng": -120.71251172771521
   }
 ]
