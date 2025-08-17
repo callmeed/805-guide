@@ -1,0 +1,40 @@
+[
+  {
+    "id": "matteis-tavern-los-olivos",
+    "name": "The Inn at Mattei's Tavern",
+    "towns": ["Los Olivos", "Santa Ynez Valley"],
+    "categories": ["stay", "bar", "outdoor"],
+    "primaryCategory": "stay",
+    "price": "$$$$",
+    "tags": ["luxury", "views", "fire-pits", "cocktails", "patio"],
+    "notes": "Great as a base in Los Olivos; lively patio + bar for non-guests.",
+    "url": "https://aubergeresorts.com/matteistavern",
+    "mapUrl": "https://maps.app.goo.gl/X5oLBLpk6EFpxYS58"
+  },
+  {
+    "id": "ember-restaurant-arroyo-grande",
+    "name": "Ember Restaurant",
+    "towns": ["Arroyo Grande", "South SLO County"],
+    "categories": ["food", "activity"],
+    "primaryCategory": "food",
+    "price": "$$$",
+    "tags": ["wood-fired", "Italian", "rustic", "warm ambiance"],
+    "notes": "A wood-fired, Italian-inspired restaurant with rustic-industrial vibe and comforting contemporary menu—try the 50-layer lasagna.",
+    "address": "1200 E Grand Ave, Arroyo Grande, CA 93420",
+    "phone": "+1 805-474-7700",
+    "url": "http://www.emberwoodfire.com",
+    "mapUrl": "https://maps.app.goo.gl/CkqC34k5tsXpiMr1A"
+  },
+  {
+    "id": "the-grey-house-airbnb",
+    "name": "The Grey House AirBnB",
+    "towns": ["Arroyo Grande", "South SLO County"],
+    "categories": ["stay", "airbnb", "dog-friendly"],
+    "primaryCategory": "stay",
+    "price": "$$",
+    "tags": ["luxury", "views", "fire-pits", "cocktails", "patio"],
+    "notes": "This is our AirBnB. Sleeps 6 comfortably. We'd love to host you and your family. Can you count all the elephants?",
+    "url": "http://airbnb.com/h/aggreyhome",
+    "mapUrl": "https://maps.app.goo.gl/BpaVf4oCFLqsSRUN9"
+  }
+]
