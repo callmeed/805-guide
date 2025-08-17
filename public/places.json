@@ -23,7 +23,9 @@
     "address": "1200 E Grand Ave, Arroyo Grande, CA 93420",
     "phone": "+1 805-474-7700",
     "url": "http://www.emberwoodfire.com",
-    "mapUrl": "https://maps.app.goo.gl/CkqC34k5tsXpiMr1A"
+    "mapUrl": "https://maps.app.goo.gl/CkqC34k5tsXpiMr1A",
+    "lat": 35.12143229494812,
+    "lng": -120.59957780669752
   },
   {
     "id": "the-grey-house-airbnb",
@@ -35,6 +37,8 @@
     "tags": ["luxury", "views", "fire-pits", "cocktails", "patio"],
     "notes": "This is our AirBnB. Sleeps 6 comfortably. We'd love to host you and your family. Can you count all the elephants?",
     "url": "http://airbnb.com/h/aggreyhome",
-    "mapUrl": "https://maps.app.goo.gl/BpaVf4oCFLqsSRUN9"
+    "mapUrl": "https://maps.app.goo.gl/BpaVf4oCFLqsSRUN9",
+    "lat": 35.1182,
+    "lng": -120.6018
   }
 ]
